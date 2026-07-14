@@ -1,5 +1,7 @@
 # Task 9 — Complete automated tests
 
+**Status: Complete for the initial production release (11 Worker/runtime tests).**
+
 Add Worker integration tests, Durable Object tests, and focused React tests for the critical family-call journey. Mock every RealtimeKit administrative request.
 
 ## Acceptance criteria

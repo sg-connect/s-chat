@@ -1,5 +1,7 @@
 # Task 6 — Build PIN and family entry screens
 
+**Status: Complete**
+
 Create the mobile-first `/family` flow for checking access, entering the family PIN, handling incorrect or limited attempts, entering a display name, and logging out.
 
 Implement this as a small state-driven React screen instead of adding a routing or state-management dependency.

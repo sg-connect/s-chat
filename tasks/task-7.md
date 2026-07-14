@@ -1,5 +1,7 @@
 # Task 7 — Build privacy-first device setup
 
+**Status: Complete — RealtimeKit's setup screen provides preview, permissions, retry, and device selection.**
+
 Create the camera and microphone setup screen. Do not request device access before the participant intentionally reaches setup and interacts with it. Start microphone and camera disabled.
 
 ## Acceptance criteria

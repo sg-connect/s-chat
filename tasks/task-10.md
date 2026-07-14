@@ -1,5 +1,7 @@
 # Task 10 — Verify, document, and deploy
 
+**Status: Complete**
+
 Write a README for a nonexpert owner, run all quality checks, inspect the production output for leaked secrets, and deploy to the owner's free `workers.dev` subdomain.
 
 ## Acceptance criteria

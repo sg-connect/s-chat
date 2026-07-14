@@ -1,5 +1,7 @@
 # Task 8 — Integrate the ready-made call UI
 
+**Status: Complete**
+
 Use the current RealtimeKit React SDK and UI Kit rather than custom WebRTC signaling. The currently documented React package is `@cloudflare/realtimekit-react-ui` and the primary ready-made component is `RtkMeeting`; verify these against current documentation and installed types before implementation.
 
 ## Acceptance criteria

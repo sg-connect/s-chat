@@ -1,5 +1,7 @@
 # Task 2 — Build API and security foundations
 
+**Status: Complete**
+
 Create shared validation schemas, safe JSON parsing, request-body size limits, browser-safe errors, same-origin enforcement, CSRF protection, production security headers, and development-only safe logging.
 
 Investigate the domains required by the current RealtimeKit SDK before defining the Content Security Policy.

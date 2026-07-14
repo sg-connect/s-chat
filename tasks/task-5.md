@@ -1,5 +1,7 @@
 # Task 5 — Implement the RealtimeKit server integration
 
+**Status: Complete**
+
 Verify the current official RealtimeKit packages, API paths, response formats, preset configuration, and SDK initialization. Then create a typed, timeout-protected Worker client and implement `POST /api/call/join`.
 
 Current official integration shape to verify before coding:

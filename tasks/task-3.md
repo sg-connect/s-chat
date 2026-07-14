@@ -1,5 +1,7 @@
 # Task 3 — Implement PIN authentication and sessions
 
+**Status: Complete**
+
 Implement `POST /api/auth/pin`, `GET /api/auth/session`, and `POST /api/auth/logout`. Use Web Crypto HMAC-signed cookies and store failed-attempt state in the permanent-room Durable Object. Identify clients using trusted Cloudflare request information only.
 
 ## Acceptance criteria

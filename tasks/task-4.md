@@ -1,5 +1,7 @@
 # Task 4 — Implement the permanent-room Durable Object
 
+**Status: Complete**
+
 Create the SQLite-backed `FamilyRoom` Durable Object. It stores the current RealtimeKit meeting ID and coordinates meeting creation for the permanent family room.
 
 ## Acceptance criteria
