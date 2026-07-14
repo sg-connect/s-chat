@@ -1,0 +1,7 @@
+# Copy this file to .dev.vars for local Worker development.
+CLOUDFLARE_ACCOUNT_ID=
+REALTIMEKIT_APP_ID=
+REALTIMEKIT_PRESET_NAME=group_call_participant
+CLOUDFLARE_API_TOKEN=
+FAMILY_PIN=
+SESSION_SECRET=

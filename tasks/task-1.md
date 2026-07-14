@@ -1,5 +1,7 @@
 # Task 1 — Scaffold the full-stack project
 
+**Status: Complete**
+
 Create the TypeScript, React, Vite, Cloudflare Worker, Vitest, and ESLint project structure. Add `wrangler.jsonc`, static asset serving, the SQLite Durable Object binding and migration, `.gitignore`, `.dev.vars.example`, and npm scripts.
 
 Keep the frontend minimal: plain React and CSS, local component state, and no router, state-management library, CSS framework, or component framework.
