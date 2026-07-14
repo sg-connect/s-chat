@@ -30,6 +30,7 @@
   ],
   "vars": {
     "ENVIRONMENT": "production",
+    "ROOM_VERSION": "2026-07-14-2",
     "CLOUDFLARE_ACCOUNT_ID": "5440974f62ef78f8190d5194f31a8612",
     "REALTIMEKIT_APP_ID": "db3117c6-eb5d-4af9-8891-60251b09635c",
     "REALTIMEKIT_PRESET_NAME": "group_call_host"

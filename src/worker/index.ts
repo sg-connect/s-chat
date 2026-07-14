@@ -37,7 +37,7 @@ function json(data: unknown, status = 200, extraHeaders?: HeadersInit): Response
 }
 
 function familyRoom(env: Env) {
-  return env.FAMILY_ROOM.getByName("family");
+  return env.FAMILY_ROOM.getByName(`family-${env.ROOM_VERSION}`);
 }
 
 async function requireSession(request: Request, env: Env) {
@@ -117,7 +117,7 @@ export default {
     }
 
     if (url.pathname === "/api/health" && request.method === "GET") {
-      const room = env.FAMILY_ROOM.getByName("family");
+      const room = familyRoom(env);
       const roomStatus = await room.ping();
       return withSecurityHeaders(Response.json({ status: "ok", room: roomStatus }));
     }
