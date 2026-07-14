@@ -43,8 +43,8 @@ function FamilyPage(): React.JSX.Element {
   const [csrf, setCsrf] = useState("");
   const [pin, setPin] = useState("");
   const [name, setName] = useState("");
-  const [audio, setAudio] = useState(false);
-  const [video, setVideo] = useState(false);
+  const [audio, setAudio] = useState(true);
+  const [video, setVideo] = useState(true);
   const [token, setToken] = useState("");
   const [error, setError] = useState("");
 
@@ -87,7 +87,7 @@ function FamilyPage(): React.JSX.Element {
         <p className="eyebrow">Private family room</p><h1 id="title">Family Call</h1>
         {screen === "checking" && <p className="status" role="status">Checking access…</p>}
         {screen === "pin" && <form onSubmit={(event) => void submitPin(event)}><label htmlFor="pin">Enter family PIN</label><input id="pin" inputMode="numeric" autoComplete="one-time-code" pattern="[0-9]{6}" maxLength={6} value={pin} onChange={(event) => setPin(event.target.value.replace(/\D/g, ""))} required /><button className="button" type="submit">Continue</button></form>}
-        {(screen === "setup" || screen === "joining") && <form onSubmit={(event) => void join(event)}><p>Your camera preview and device choices appear on the next screen.</p><label htmlFor="name">Your name</label><input id="name" maxLength={40} autoComplete="name" value={name} onChange={(event) => setName(event.target.value)} required /><div className="toggles"><label><input type="checkbox" checked={audio} onChange={(event) => setAudio(event.target.checked)} /> Start with microphone on</label><label><input type="checkbox" checked={video} onChange={(event) => setVideo(event.target.checked)} /> Start with camera on</label></div><button className="button" type="submit" disabled={screen === "joining"}>{screen === "joining" ? "Joining…" : "Join family call"}</button><button className="text-button" type="button" onClick={() => void logout()}>Use a different PIN</button></form>}
+        {(screen === "setup" || screen === "joining") && <form onSubmit={(event) => void join(event)}><p>Your camera preview and device choices appear on the next screen. Camera and microphone start on so everyone can see and hear you; turn either one off here if you prefer.</p><label htmlFor="name">Your name</label><input id="name" maxLength={40} autoComplete="name" value={name} onChange={(event) => setName(event.target.value)} required /><div className="toggles"><label><input type="checkbox" checked={audio} onChange={(event) => setAudio(event.target.checked)} /> Microphone on</label><label><input type="checkbox" checked={video} onChange={(event) => setVideo(event.target.checked)} /> Camera on</label></div><button className="button" type="submit" disabled={screen === "joining"}>{screen === "joining" ? "Joining…" : "Join family call"}</button><button className="text-button" type="button" onClick={() => void logout()}>Use a different PIN</button></form>}
         {screen === "left" && <><p className="status">Call left</p><button className="button" onClick={() => setScreen("setup")}>Join again</button><button className="text-button" onClick={() => void logout()}>Log out</button></>}
         {error && <p className="error" role="alert" aria-live="polite">{error}</p>}
       </section>

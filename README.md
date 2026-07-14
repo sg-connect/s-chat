@@ -44,7 +44,7 @@ Camera and microphone access require HTTPS except on `localhost`. To test from a
 ## Cloudflare setup
 
 1. Create a RealtimeKit application in the Cloudflare dashboard.
-2. Use `group_call_participant`, or another preset that permits publishing and receiving audio/video.
+2. Use `group_call_host`, the default group-call role that can publish and receive audio/video without full administrator privileges.
 3. Create a restricted API token with Account → Realtime → Realtime Admin permission for the selected account.
 4. Put the non-secret Account ID, App ID, and preset in `wrangler.jsonc`.
 5. Store production secrets interactively:
